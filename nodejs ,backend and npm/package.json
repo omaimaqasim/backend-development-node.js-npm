@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-backend-npm",
+  "version": "1.0.0",
+  "description": "spotify",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "spotify",
+    "music"
+  ],
+  "author": "ummi",
+  "license": "ISC",
+  "dependencies": {
+    "date-and-time": "^4.0.2"
+  }
+}
