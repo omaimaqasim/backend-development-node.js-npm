@@ -1,4 +1,5 @@
 // Named exports
+// these are the example of exporting values in ecmajs
 export const a = 1; // this is named export
 export const b = 2; // this is named export
 export const c = 3; // this is named export

@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Node.js Notes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node.js Notes</title>
 </head>
 <body>
-    
-    <!-- 
-      If you want to skip all questions while npm init then write:
+
+  <!-- 🔹 Difference Between Modules and npm -->
+  <!-- 
+    - Modules = Actual pieces of code (built-in, custom, or third-party).
+    - npm = Tool that downloads and manages third-party modules.
+  -->
+
+  <!-- 🔹 npm init -->
+  <!-- 
+    - If you want to skip all questions while running npm init:
         npm init -y
-      Later you can edit package.json manually.
-    -->
+    - Later you can edit package.json manually.
+  -->
 
-    <!-- 
-      What is a module?
-      → A module is a block of code that we can borrow and use in our project.
-    -->
+  <!-- 🔹 What is a Module? -->
+  <!-- 
+    - A module is a block of code that we can borrow and use in our project.
+    - Types of modules:
+        1. Built-in (fs, http, path, etc.)
+        2. Custom (your own code in files)
+        3. Third-party (installed using npm)
+  -->
 
-    <!-- 
-      If you want to install different modules, you use npm install with module name.
-      Example: npm install express
-    -->
+  <!-- 🔹 Installing Modules with npm -->
+  <!-- 
+    - To install different modules:
+        npm install <moduleName>
+    - Example:
+        npm install express
+  -->
 
-    <!-- 
-      When you change something in a Node.js file, you normally have to reload 
-      the server manually. To reload automatically, use nodemon:
+  <!-- 🔹 Auto-reload with Nodemon -->
+  <!-- 
+    - Normally, you must restart server after changes.
+    - Nodemon reloads automatically.
+    - Steps:
         1. npm install --global nodemon
         2. nodemon filename.js
-    -->
+  -->
 
-    <!-- 
-      nvm (Node Version Manager):
-      → Lets you work with multiple Node.js versions on the same system.
-    -->
+  <!-- 🔹 nvm (Node Version Manager) -->
+  <!-- 
+    - Lets you work with multiple Node.js versions on the same system.
+    - Example: switching between old and new versions easily.
+  -->
 
 </body>
 </html>

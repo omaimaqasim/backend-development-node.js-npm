@@ -1,31 +1,21 @@
 // --- Importing modules ---
 
-// CommonJS example (if using type: commonjs in package.json)
 // const { createServer } = require('node:http');
 
+// this works on both backend plus frontend
 // ECMAScript Module example (if using "type": "module" in package.json)
+// you cant change name for importing name values you have to call with their actual exporting name
 import { a, b, c, d, e } from "./mymodule.js";
 console.log("Values:", a, b, c, d, e);
 
+// for importing default values you can change name 
 import zeyd from "./mymodule.js";
 console.log(zeyd);
 
-// now inporting using require
+
+// CommonJS example (if using type: commonjs in package.json)
+// now inporting using require === this only works on backend not on chrome
 const id = require("./mymodule2.js")
 console.log(id)
 // in default values you can call that values with diff name
 
-// --- Example basic server (commented for reference) ---
-
-// const hostname = '127.0.0.1';
-// const port = 3000;
-
-// const server = createServer((req, res) => {
-//   res.statusCode = 200;
-//   res.setHeader('Content-Type', 'text/plain');
-//   res.end('Hello World');
-// });
-
-// server.listen(port, hostname, () => {
-//   console.log(`Server running at http://${hostname}:${port}/`);
-// });
