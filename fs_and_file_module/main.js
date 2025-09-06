@@ -1,7 +1,7 @@
 // ==============================
 // Node.js File System (fs) Module
 // ==============================
-const fs = require("fs");
+import fs from "fs"
 
 console.log("starting");
 
@@ -30,6 +30,10 @@ fs.appendFile("zeyn2.txt", " and he is best", (e, d) => {
     console.log(d); 
     // Note: 'd' is undefined because appendFile doesn't return data
 });
+
+fs.readFile("ummi.text",(e,d)=>{
+   console.log(e,d)
+})
 
 // ------------------------------
 // Async nature → This prints immediately

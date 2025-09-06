@@ -1,0 +1,26 @@
+==============================
+ Node.js File System Challenges
+==============================
+
+Q1. Write a program that:
+    - Creates a file notes.txt with text "My first note".
+    - Then appends " and this is updated" to the same file.
+    - Finally, reads the file and prints its content.
+    (Do this in async way only using fs.writeFile, fs.appendFile, fs.readFile).   (DONE)
+
+Q2. Convert Q1 into sync version using writeFileSync, appendFileSync, readFileSync. 
+    Compare outputs of async vs sync. (DONE).
+
+Q3. Write code that checks if test.txt exists:
+    - If it does, print "File already exists".
+    - If not, create it with text "Hello World". (DONE).
+
+Q4. Delete a file temp.txt using fs.unlink(). 
+    Add error handling so if the file doesn’t exist, it prints "File not found".
+
+Q5. Use fs.readdir() to list all files inside a folder named myFolder.
+
+Q6. Use fs.promises + async/await to:
+    - Write students.json file with an array of names.
+    - Then read it back and parse into an array.
+    - Log each student name one by one.
