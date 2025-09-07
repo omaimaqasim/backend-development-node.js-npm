@@ -16,7 +16,7 @@ Q3. Write code that checks if test.txt exists:
     - If not, create it with text "Hello World". (DONE).
 
 Q4. Delete a file temp.txt using fs.unlink(). 
-    Add error handling so if the file doesn’t exist, it prints "File not found".
+    Add error handling so if the file doesn’t exist, it prints "File not found". done
 
 Q5. Use fs.readdir() to list all files inside a folder named myFolder.
 
