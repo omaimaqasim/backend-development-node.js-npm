@@ -76,3 +76,4 @@ fs.readdir("./myfolder", (err, files) => {
 
 // qno 6 solved
 
+    
