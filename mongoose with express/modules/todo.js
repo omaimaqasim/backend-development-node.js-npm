@@ -1,8 +1,13 @@
 import mongoose from "mongoose"
 const todoschema = new mongoose.Schema({
-    title : string,
-    desc : string,
+    title : String,
+    desc : String,
     isdone : Boolean
+    // if in title you write num then it will automatically convert that to string if if title is number
+    // set by developer and you write string then it will show error
 })
 
-const todo = mongoose.model("todo","todoschema")
+const Todo = mongoose.model("Todo",todoschema)
+
+// Export model
+export { Todo };
