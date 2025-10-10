@@ -7,6 +7,7 @@
 // you cant change name for importing name values you have to call with their actual exporting name
 import { a, b, c, d, e } from "./mymodule.js";
 console.log("Values:", a, b, c, d, e);
+// for importing name export use { } always
 
 // for importing default values you can change name 
 import zeyd from "./mymodule.js";
@@ -18,4 +19,7 @@ console.log(zeyd);
 const id = require("./mymodule2.js")
 console.log(id)
 // in default values you can call that values with diff name
+
+
+
 
