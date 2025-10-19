@@ -15,8 +15,11 @@ const obj = {
 export default obj; // default export
 
 
-// qno 1
+// task 1
 export const add = (a, b) => a + b;
 export const sub = (a, b) => a - b;
+
+
+
 
 

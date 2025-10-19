@@ -39,3 +39,7 @@ fs.readFile("ummi.text",(e,d)=>{
 // Async nature → This prints immediately
 // ------------------------------
 console.log("ending");
+
+
+//✅ In normal JS files, await must be used inside an async function.
+// ✅ But in ES modules (files that use import or have "type": "module" in package.json), Node.js allows top-level await, so you can use await directly outside any function.

@@ -10,3 +10,6 @@ let b = await fs.appendFile("zeyn.txt"," \n\n\n and he is best of all time")
 
 // 📌 The file content comes as a Buffer, so we convert to string before printing
 console.log(a.toString(),b);
+
+// remember that file data come in computer language raw dat convert it tostring so it become readable
+

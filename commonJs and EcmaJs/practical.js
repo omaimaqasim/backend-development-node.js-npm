@@ -21,11 +21,11 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 
-
 // if by mistake you delete node_modules folder then just go to package.json and 
 // in terminal type npm install as js goes to package.json and download all modules that are in that
 
-
+// task 1
 import {add,sub} from "./mymodule.js"
 
 console.log(add(2,3) ,sub(3,3))
+
