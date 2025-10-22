@@ -1,3 +1,5 @@
+import { greet } from "./greet.js";
+// you should import all needed module before any code
 
 // task no 1 : “Write a Node.js script that prints your name and today’s date.”
 
@@ -7,6 +9,7 @@
 // console.log(myname + " is your name na and today date is " + today)
 
 console.log("start")
-import { greet } from "./greet.js";
 
-console.log(greet)
+greet()
+
+console.log("end");
