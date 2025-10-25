@@ -1,0 +1,7 @@
+A parameter is a placeholder that waits to receive a value from outside 
+ (like from a URL or a function call).
+
+ Once it receives that value, it behaves like a variable inside the code.
+
+A variable, on the other hand, is something we create ourselves inside the code 
+ to store a value — not given automatically from outside.
