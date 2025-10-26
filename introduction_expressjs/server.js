@@ -15,7 +15,13 @@ app.get("/contact",(req,res)=>{
 app.get("/user/:name/:age",(req,res)=>{
     res.send(`Username : ${req.params.name} , age : ${req.params.age}`)
 })
+// query para is the one that come after ? in url
+app.get("/filter",(req,res)=>{
+    const {category,price} = req.query
+    res.send(`Category: ${category}, Price below: ${price}`)
+    // filter?category=book&price=400 example
+})
 
 app.listen(port,()=>{
     console.log(`Server started successfully on port ${port}`)
-})
+})  
