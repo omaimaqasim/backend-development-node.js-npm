@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-
+// Main purpose of using a router is to organize your Express app so it’s clean, readable, and easy to manage — especially as it grows.
 
 
 // define the home page route
