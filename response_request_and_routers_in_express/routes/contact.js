@@ -14,5 +14,5 @@ router.get('/message/:name', (req, res) => {
   res.send(`Message received from ${req.params.name} `)
 })
 
-module.exports = router
+module.exports = router;
 
