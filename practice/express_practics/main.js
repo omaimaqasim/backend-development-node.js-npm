@@ -2,6 +2,15 @@ const express = require('express')
 const app = express()
 const port = 3500
 
+// middleware 
+
+function checker(req,res,next) {
+  let now = new Date();
+   console.log('Request received at :' + now.toLocaleTimeString());
+     next()
+}
+app.use(checker)
+
 app.get("/" , (req,res)=>{
     res.send("Welcome to the Random Quotes API")
 })
@@ -24,6 +33,8 @@ app.get("/quote",(req,res)=>{
     let randomQuote = urduQuotes[Math.floor(Math.random()*urduQuotes.length) ]
     res.send(randomQuote)
 })
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

@@ -1,0 +1,28 @@
+  📂 Question Task: Organize files into folders by their extensions
+
+  You are given a folder with files like:
+    name.jpg, name.png, this.pdf, harry.zip, Rohan.zip, cat.jpg
+
+  Your task is to write a Node.js program that does the following:
+
+  1. Read all the files in the given folder.
+
+  2. For each file, get its extension (e.g., .jpg, .png, .pdf, .zip).
+
+  3. Create a separate folder for each unique extension (jpg, png, pdf, zip).
+
+  4. Move each file into its respective extension folder.
+    Example: "name.jpg" → goes into "jpg" folder
+              "harry.zip" → goes into "zip" folder
+
+  5. If the folder for an extension already exists, do not create it again.
+
+  6. Print a message for each file moved, showing its new location.
+
+  ✅ Expected Output Structure:
+    jpg/name.jpg
+    jpg/cat.jpg
+    png/name.png
+    pdf/this.pdf
+    zip/harry.zip
+    zip/Rohan.zip
