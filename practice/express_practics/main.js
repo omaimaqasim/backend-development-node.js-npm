@@ -9,6 +9,7 @@ function checker(req,res,next) {
    console.log('Request received at :' + now.toLocaleTimeString());
      next()
 }
+
 app.use(checker)
 
 app.get("/" , (req,res)=>{
@@ -29,10 +30,30 @@ const urduQuotes = [
   "دوسروں کے لیے وہی چاہو جو اپنے لیے چاہتے ہو۔"
 ];
 
+// add query route
 app.get("/quote",(req,res)=>{
+  let author = req.query.author
+  if (author==="ali") {
     let randomQuote = urduQuotes[Math.floor(Math.random()*urduQuotes.length) ]
-    res.send(randomQuote)
+    res.send(randomQuote) 
+  }
+  else{
+    res.send(`quotes by ${author} are not found `)
+  }
 })
+
+// return quote by id if not found then return not found quote
+app.get("/quote/:id",(req,res)=>{
+  let id = req.params.id
+   if (id==='zen22') {
+       res.send(urduQuotes[1]+'author---zen22')
+   }
+   else{
+    res.send("quote not found")
+   }
+})
+
+
 
 
 
