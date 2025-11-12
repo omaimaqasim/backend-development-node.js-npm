@@ -11,7 +11,7 @@ function checker(req,res,next) {
 }
 
 app.use(checker)
-
+  
 app.get("/" , (req,res)=>{
     res.send("Welcome to the Random Quotes API")
 })
@@ -54,9 +54,14 @@ app.get("/quote/:id",(req,res)=>{
 })
 
 
-
-
+// how to handle not found routes
+app.use((req,res)=>{
+  res.status(404).send("file not found")
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+// we use get when we want something when user type that route and it works 
+// only for that specific route but .use is used for all types of routes
