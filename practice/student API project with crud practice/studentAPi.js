@@ -21,6 +21,19 @@ app.get("/students",(req,res)=>{
 // but it depends on where it’s used if for sending obj to server then it convert to string 
 // on other hand it convert to obj
 })
+// it convert you post student obj to string for server
+app.use(express.json())
+
+app.post('/students',(req,res)=>{
+  // req.body will give you obj of what you post on url
+  const newStudent = req.body;
+   students.push(newstudent)
+   if (!newStudent || !newStudent.id || !newStudent.name) {
+    return res.status(400).send("Please provide a valid student with id and name");
+}
+
+   res.send("Added new student successfully")
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

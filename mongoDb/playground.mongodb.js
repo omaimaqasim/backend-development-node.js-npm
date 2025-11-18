@@ -10,6 +10,10 @@ db.getCollection('concepts').insertMany([
     name: "zeyden",
     class: "js concepts"
   },
+    {
+    name: "hunzaa",
+    class: "js advance"
+  },
   {
     name: "ali",
     class: "html basics"
