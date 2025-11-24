@@ -7,7 +7,7 @@ const todoschema = new mongoose.Schema({
     // set by developer and you write string then it will show error
 })
 
-const Todo = mongoose.model("Todo",todoschema)
+const Todo = mongoose.model("Todo",todoschema) // “Create a Mongoose model called ‘Todo’ using the schema ‘todoschema’.”
 
 // Export model
 export { Todo };
