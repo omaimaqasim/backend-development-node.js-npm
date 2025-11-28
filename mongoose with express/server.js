@@ -22,7 +22,7 @@ app.get('/', async (req, res) => {
     title: "hay first todo",
     desc: "description of this todo",
     isdone: false
-  })
+  })  
   await newTodo.save()
   res.send('Todo saved!')
 })

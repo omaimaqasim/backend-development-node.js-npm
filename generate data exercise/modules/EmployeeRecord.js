@@ -1,7 +1,4 @@
 import mongoose from "mongoose";
-import { scheduler } from "node:timers/promises";
-import { boolean } from "webidl-conversions";
-
 const recordSchema = new mongoose.Schema({
 
     name : String,
@@ -12,5 +9,7 @@ const recordSchema = new mongoose.Schema({
 
 }) 
 
-const record = mongoose.model("EmployeeRecords",recordSchema);
+// this model employee mongodb create collection with the name of model save
+const record = mongoose.model("Employee",recordSchema);
 
+export {record};
