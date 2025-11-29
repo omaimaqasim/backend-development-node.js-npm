@@ -1,4 +1,4 @@
-import mongoose, { connect } from "mongoose";
+import mongoose from "mongoose";
 import express from "express"
 import {record} from "./modules/EmployeeRecord.js"
 
@@ -29,7 +29,7 @@ function pickrandom(array) {
   
   return array[Math.floor(Math.random()*array.length)];
 }
-pickrandom()
+
 
 // using for loop for generating 10 records
 
@@ -43,14 +43,13 @@ for (let i = 1; i <=10; i++) {
     city :`${pickrandom(cities)}`,
     isManager :`${pickrandom(managers)}`
   })
-}
+  // this save records in mongodb
+     await newRecords.save()
+    }
+    res.send('save 10 records')
 
-// this save records in mongodb
-   await newRecords.save()
-
-   res.send('save 10 records')
-
-
+    // ❗ After res.send(), Express ends the request and you write this inside loop
+    // thats why it save one record not 10 this is mistake you done
 
 })
 

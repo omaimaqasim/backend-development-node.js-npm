@@ -3,9 +3,9 @@ const recordSchema = new mongoose.Schema({
 
     name : String,
     salary : Number,
-    language : string,
-    city : string,
-    isManager : boolean
+    language : String,
+    city : String,
+    isManager : Boolean
 
 }) 
 
