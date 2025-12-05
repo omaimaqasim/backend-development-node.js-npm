@@ -18,6 +18,9 @@ app.get("/",(req,res)=>{
 
 app.get("/generate",async(req,res)=>{
 
+     // clear old data
+    await record.deleteMany({});
+
   const names = ["Harry", "John", "Sara", "Mike", "Emma"];
 const salaries = [45000000, 30000000, 55000000, 28000000, 60000000];
 const languages = ["Python", "JavaScript", "C++", "Java", "Go"];
