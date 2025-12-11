@@ -1,0 +1,17 @@
+✅ What is Markdown ( .md )?
+
+Markdown is a lightweight text formatting language used to write:
+
+Documentation
+
+README files
+
+Notes
+
+Project guides
+
+Blog posts
+
+GitHub documentation
+
+It uses plain text with simple formatting symbols.
