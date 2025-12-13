@@ -15,3 +15,14 @@ Blog posts
 GitHub documentation
 
 It uses plain text with simple formatting symbols.
+
+output.css file contains all utility classes that you use 
+in your project and input.css contain all utility classes
+
+smartwork : npx tailwindcss -i ./src/input.css -o ./src/output.css --watch 
+if you feel like this is long command then make a script name build in scripts 
+in package.json then just wtite in your terminal 
+npm run build then that command will run
+
+
+//whenever you add tailwind in your html output will update automatically
