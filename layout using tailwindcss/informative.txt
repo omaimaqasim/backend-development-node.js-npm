@@ -1,0 +1,12 @@
+🧠 Golden Rules
+
+items-start / center / end
+Works on the container
+Needs extra height to be visible
+self-start
+Works on individual item
+Aligns relative to other flex items
+DOES NOT need extra height
+
+
+remember this when we apply property absolute and left so it say more far way from parents left edge
