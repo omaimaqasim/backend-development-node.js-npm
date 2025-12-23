@@ -32,7 +32,17 @@ npm error could not determine executable to run
 npm error A complete log of this run can be found in: 
 
 ```
-npm install -D tailwindcss@3postcss autoprefixer
+npm install -D tailwindcss@3 postcss autoprefixer
 
  npx tailwindcss init
 ```
+
+Step 6: What Vite does in that case You still have to save the file But you do NOT have to refresh the browser
+```
+npm install -D vite
+
+just add one script is package.json  "dev" : "vite"
+
+then just run this command : npm run dev   now you dont have to reload you website everytime
+```
+
