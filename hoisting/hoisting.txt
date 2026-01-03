@@ -1,0 +1,4 @@
+we use hoisting so that we can make our website on internet so everyone
+can easily accing my website in hoisting we rend a computer cloud and it give ip
+address username and password such that we can easily connect to that computer
+
