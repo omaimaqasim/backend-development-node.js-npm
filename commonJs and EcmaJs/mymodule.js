@@ -14,6 +14,8 @@ const obj = {
 
 export default obj; // default export
 
+//
+
 
 // task 1
 export const add = (a, b) => a + b;
