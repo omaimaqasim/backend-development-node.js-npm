@@ -21,5 +21,10 @@
 >you just have to change you js to jsreact then you can easily use mat
 
 
+**what is promps**
+
+> we can data parse in components using promps 
+
+
 
 
