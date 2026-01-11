@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: rgb(200, 159, 238);
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+   gap: 10px;
+   align-items: center;
+   justify-content: center;
+
+  
+}
