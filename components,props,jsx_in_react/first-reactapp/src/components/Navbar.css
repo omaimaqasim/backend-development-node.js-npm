@@ -2,18 +2,18 @@
     margin: 0;
     padding: 0;
 }
-
-
-body{
-    background-color: rgb(200, 159, 238);
-}
-
 ul{
     list-style-type: none;
     display: flex;
    gap: 10px;
    align-items: center;
-   justify-content: center;
-
   
+
+}
+ul li{
+    font-size: 15px;
+}
+.nav{
+    background-color: rgb(253, 215, 165);
+    padding: 10px;
 }

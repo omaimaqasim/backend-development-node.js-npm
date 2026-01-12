@@ -1,5 +1,6 @@
 
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 function App() {
 
 
@@ -8,6 +9,7 @@ function App() {
    //remmeber that in return their should be one div or wraper in that you should write code for your app
    <>
     <Navbar/>
+    <Footer/>
     </>
   )
 }
