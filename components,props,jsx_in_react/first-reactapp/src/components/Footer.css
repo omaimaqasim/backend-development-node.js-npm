@@ -2,6 +2,8 @@
     background-color: rgb(0, 0, 0);
     color: white;
     text-align: center;
+    /* when i apply position property then div take only text width thats why center
+    property is not working so we shouls use width 100% */
     position: fixed;
     bottom: 0;
     width: 100%;

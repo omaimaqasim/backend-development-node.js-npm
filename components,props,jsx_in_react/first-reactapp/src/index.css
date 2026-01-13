@@ -2,3 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards>*{
+    width: 30vw;
+    height: 60vh;
+}

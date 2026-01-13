@@ -1,0 +1,7 @@
+.card{
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    background: rgba(190, 137, 251, 0.548);
+    border: solid purple;
+}
