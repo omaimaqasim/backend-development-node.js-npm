@@ -15,6 +15,7 @@ code -r project name
 becase of   <StrictMode> in main.jsx as you know that in production becuase of this react make that component to work one for check and to work one for real
 ``
 
+<!-- remember this when we state change in app react re render whole app -->
 
 
 
