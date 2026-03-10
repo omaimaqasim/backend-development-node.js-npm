@@ -1,0 +1,82 @@
+// ===============================
+// NODE.JS FILE SYSTEM PRACTICE TASK
+// ===============================
+
+// Import fs/promises module
+// (Use ES module syntax with import)
+
+
+// STEP 1:
+// Create a file named "students.txt"
+// Write the following students inside it:
+//
+// Ali
+// Ahmed
+// Sara
+// Zain
+//
+// Hint: use writeFile()
+
+
+// STEP 2:
+// Read the "students.txt" file
+// Remember: Node returns file data as a Buffer
+// Convert it into a string using .toString()
+//
+// Print output like:
+//
+// Student List:
+// Ali
+// Ahmed
+// Sara
+// Zain
+//
+// Hint: use readFile()
+
+
+// STEP 3:
+// Append two more students to the file:
+//
+// Ayesha
+// Hamza
+//
+// Hint: use appendFile()
+
+
+// STEP 4:
+// Read the file again
+// Print:
+//
+// Updated Student List:
+// Ali
+// Ahmed
+// Sara
+// Zain
+// Ayesha
+// Hamza
+
+
+// STEP 5:
+// Count total number of students in the file
+//
+// Hint:
+// Convert file data to string
+// Use split("\n") to convert into an array
+//
+// Print:
+//
+// Total Students: 6
+
+
+// BONUS CHALLENGE (OPTIONAL):
+//
+// Create a file named "log.txt"
+//
+// Every time the program runs,
+// append the current date and time like this:
+//
+// Program executed at: current date/time
+//
+// Hint:
+// Use appendFile()
+// Use new Date()

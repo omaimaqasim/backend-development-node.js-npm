@@ -13,3 +13,5 @@ console.log(a.toString(),b);
 
 // remember that file data come in computer language raw dat convert it tostring so it become readable
 
+
+// diff bw async with await and synchronous fn?

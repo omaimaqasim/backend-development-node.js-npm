@@ -40,6 +40,9 @@ fs.readFile("ummi.text",(e,d)=>{
 // ------------------------------
 console.log("ending");
 
+// commonjs and echmajs are two diff modules system that are used to import 
+// and export code in diff files
+
 
 //✅ In normal JS files, await must be used inside an async function.
 // ✅ But in ES modules (files that use import or have "type": "module" in package.json), Node.js allows top-level await, so you can use await directly outside any function.

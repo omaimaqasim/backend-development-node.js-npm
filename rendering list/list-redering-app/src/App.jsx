@@ -43,8 +43,9 @@ function App() {
   return (
     <>
         {/* for rendering all todos use this technique */}
+        {/* when you are rendering list using map then you should give unique key like below */}
       {rendertodo.map(todo=>{
-        return <Todo  todo = {todo}/>
+        return <Todo  todo = {todo} key={todo.title}/>
       })}
       <div className="card">
         <button onClick={() => setshowbtn(!showbtn)}>
