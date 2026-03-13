@@ -1,8 +1,6 @@
- ali 
- ahmed 
- zara 
- zeyd
- zeyn 
- zehra
- zeyn 
- zehra
+Ali
+Ahmed
+Sara
+Zain
+Ayesha
+Hamza

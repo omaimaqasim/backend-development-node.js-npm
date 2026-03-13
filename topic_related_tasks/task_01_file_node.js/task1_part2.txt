@@ -1,0 +1,27 @@
+// 🧠 5-Minute Path Challenge – Node.js Path Module
+
+// TASK:
+// 1️⃣ Given this file path, print the directory (folder) of the file
+// let filepath = "C:\\Users\\hp\\Documents\\project\\report.pdf";
+// Expected Output: Directory: C:\Users\hp\Documents\project
+
+// 2️⃣ Print the file name (basename) of the file
+// Expected Output: File Name: report.pdf
+
+// 3️⃣ Print the file extension of the file
+// Expected Output: Extension: .pdf
+
+// 4️⃣ Create a new path using path.join() with these parts:
+// "Downloads", "images", "photo.png"
+// Expected Output: Joined Path: Downloads\images\photo.png
+
+// 5️⃣ Create the absolute path using path.resolve() with these parts:
+// "images", "logo.png"
+// Expected Output (example): Absolute Path: C:\Users\hp\yourProject\images\logo.png
+
+// BONUS (Tricky):
+// Use path.join() to create this path: "project", "data", "users.json"
+// Expected Output: project\data\users.json
+
+// 🔹 Hint: Use Node.js path module functions:
+// path.dirname(), path.basename(), path.extname(), path.join(), path.resolve()
