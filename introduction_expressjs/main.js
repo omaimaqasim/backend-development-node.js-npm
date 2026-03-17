@@ -5,6 +5,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+// A dynamic parameter is a variable part of a URL that changes and lets one route handle many requests.
 
 // ==================================================
 // ✅ Root route → When we visit '/', it shows "Hello World!"
