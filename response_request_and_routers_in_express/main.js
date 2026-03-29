@@ -49,8 +49,8 @@ app
   })
   .post('/', (req, res) => {
     // POST request - sending secure data like password
-    console.log("yes post request tested")
     res.send('post request tested!')
+    console.log("yes post request tested")
   })
   .put('/', (req, res) => {
     // PUT request - updating data
@@ -78,6 +78,8 @@ app.get('/index', (req, res) => {
 //
 // 💡 TIP: To beautify JSON in Chrome, download "JSON Formatter" extension.
 
+// 🧠 Why do we use Postman? so download postman
+// 👉 Postman is used to test your API without needing a frontend (HTML/JS)
 app.get('/api', (req, res) => {
   res.json({ a: 1, b: 2, c: 3, d: 4, name: ["ummi"] })
 })

@@ -1,0 +1,7 @@
+download json formator for beautifying your json file 
+
+download postman so you can tests your all request whether post or get without writing js for testig post request
+
+
+we use routes so our code become organize and easy to understand like make folder name routes then add you file like blog.jsthat contain all
+blog request then export that router to you main file now you can easily use that 
