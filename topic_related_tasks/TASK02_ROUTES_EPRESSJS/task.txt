@@ -1,0 +1,89 @@
+Perfect — now this is a real developer moment 😏
+You’ve learned enough to build something practical, so here’s ONE solid task that will test everything you mentioned:
+
+🔴 🔥 TASK: Mini Blog API (No Database)
+🧠 Scenario:
+
+Build a backend like a simple blog system (like Medium, but very basic)
+
+🎯 Your Goal:
+
+Create an Express app that can:
+
+Show all blog posts
+Add a new post
+Update a post
+Serve an HTML page
+Use routes (separate files)
+✅ Requirements
+🟣 1. Use Router (VERY IMPORTANT)
+
+Create folder:
+
+routes/
+
+Create file:
+
+routes/posts.js
+
+👉 All blog-related routes must be inside this file
+
+🔵 2. Dummy Data (No database)
+
+Use an array:
+
+let posts = [
+  { id: 1, title: "First Post", content: "Hello world" },
+  { id: 2, title: "Second Post", content: "Learning Express" }
+];
+🟡 3. Create These Routes
+✅ GET → Get all posts
+GET /posts
+
+👉 Return all posts using res.json()
+
+✅ GET → Get single post
+GET /posts/:id
+
+👉 Return post by ID
+
+✅ POST → Add new post
+POST /posts
+
+👉 Add new object to array
+👉 Return success message
+
+✅ PUT → Update post
+PUT /posts/:id
+
+👉 Update title/content of that post
+
+🟢 4. Use Router in Main File
+app.use('/posts', postsRouter)
+🟠 5. Serve HTML Page
+
+Create:
+
+templates/home.html
+
+Route:
+
+GET /home
+
+👉 Use res.sendFile() to send HTML
+
+🔵 6. Add One More Route
+GET /api/info
+
+👉 Return JSON like:
+
+{
+  name: "Blog API",
+  version: "1.0"
+}
+⚠️ Rules
+
+❌ Don’t use database
+❌ Don’t skip router
+✅ Use Postman to test all routes
+✅ Use correct methods (GET, POST, PUT)
