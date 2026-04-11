@@ -64,6 +64,7 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 
+// Middleware is used to run code before response (like logging, checking, modifying request)
 // ========================================
 // Types of Middleware
 // ========================================

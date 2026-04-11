@@ -8,6 +8,12 @@ app.get('/home', (req, res) => {
   res.sendFile('templates/index.html',{root:__dirname})
 })
 
+app.get('/api', (req, res) => {
+  const api ={name: "Blog API",
+  version: "1.0"}
+  res.json(api)
+})
+
 app.use('/posts', posts);
 
 app.listen(port, () => {

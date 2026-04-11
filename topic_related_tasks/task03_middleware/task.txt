@@ -1,0 +1,13 @@
+/*
+Task: Quick Middleware Practice
+
+1. Create an Express app.
+2. Add a middleware that sets a custom header 'X-Custom-Header' with value 'HelloWorld' on every response.
+3. Create a route '/' that sends "Hello" as the response.
+4. Test your app by visiting '/' and checking that the response includes your custom header.
+
+Goals:
+- Practice writing middleware
+- Modify the response
+- Apply middleware globally
+*/
