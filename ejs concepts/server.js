@@ -3,7 +3,7 @@ const { dirname } = require('path')
 const app = express()
 const port = 3000
 
-
+//basically we use ejs to insert variables in our html file dynamically , you are connecting ejs with html
 app.set("view engine", "ejs")
 
 app.get('/', (req, res) => {
