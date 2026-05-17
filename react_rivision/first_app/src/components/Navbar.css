@@ -1,0 +1,13 @@
+nav{
+
+    background-color: rgba(12, 157, 218, 0.477);
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+ul li{
+    list-style: none;
+}
