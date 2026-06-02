@@ -1,30 +1,82 @@
 
 import './App.css'
-import Navbar from"./components/Navbar"
+import Navbar from "./components/Navbar"
 import Card from "./components/Card"
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 function App() {
- 
-    const [count , setCount] = useState(0);
-    //this will trigger whenever component render
-     useEffect(() => {
-       alert("count is change")
-     },[count]);
+
+  const [count, setCount] = useState(0);
+  const [showbtn, setShowBtn] = useState(true);
+  const a = useRef(0);
+  const[todos , settodos] = useState([
+    {
+      title : "todo 1",
+      desc : "this is todo 1 bring chocolate"
+    },
+    {
+      title : "todo 2",
+      desc : "this is todo 2 bring juice"
+    },
+    {
+      title : "todo 3",
+      desc : "this is todo 3 bring strawberry"
+    }
+  ])
+
+  const Todo = (todo)=>{
+     return (<>
      
-    
+       <div className="todo_title">{todo.title}</div>
+       <div className="todo_desc">{todo.desc}</div>
+     
+     
+     
+     </>
+
+     )
+  }
+  //remember when component rerender react again run code from to to bottom and reintialize our normal
+  // variable again but we dont want it that why we use useref as it make our variable persist our variable 
+  //will not reinitailize again
+
+  const refBtn = useRef();
+  // This is for accessing the actual button HTML element.
+
+  useEffect(() => {
+    a.current = a.current + 1;
+     console.log(`rrendering but a value is ${a.current}`)
+      refBtn.current.style.backgroundColor = "green";
+  });
+  
+  //this will trigger whenever component render
+  // useEffect(() => {
+  //   alert("count is change")
+  // }, [count]);
+
+
   return (
     <>
-        <Navbar/>
-        <div className="cards">
+      <Navbar />
+      <div className="cards">
         {/* <Card title = "card 1" des = "this is card one" /> */}
-          <Card title = "card 2" des = "this is card two" />
-            <Card title = "card 3" des = "this is card three" />
-        </div>
+        <Card title="card 2" des="this is card two" />
+        <Card title="card 3" des="this is card three" />
+      </div>
 
-        
-        <div className="count">{count}</div>
-        <button onClick={()=>setCount(count+1)}>UPDATE COUNT</button>
+
+      <div className="count">{count}</div>
+      {/* this ref tell that this button is store to refbtn variable mean you can access button dom through useref also */}
+      <button ref={refBtn} onClick={() => setCount(count + 1)}>UPDATE COUNT</button>
+
+      {showbtn &&  <button>yes btn show</button> }
+
+      {todos.map(todo=>{
+          return <Todo title = {todo.title} desc = {todo.desc}/>
+      })}
+
+      {/* We use map() because it returns a new array, and React can render an array of components. */}
+  
     </>
   )
 }
@@ -68,3 +120,4 @@ export default App
 //unmount = remove from the ui
 // UI = how it looks
 // UX = how it works and feel when use  mean user experience
+
