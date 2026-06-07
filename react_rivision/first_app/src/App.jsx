@@ -71,8 +71,13 @@ function App() {
 
       {showbtn &&  <button>yes btn show</button> }
 
+{/* When React renders a list, every item must have a unique key prop so React can track which item changed, was added, or was removed.
+
+key is impoortant because if you delete one todo then when it renders again it misplace todo props for example todo 1 2 and 3 in page if i delte todo 2 then react
+ render again and todo 3 take place of todo 2 so react give props of todo 2 not 3 */}
       {todos.map(todo=>{
-          return <Todo title = {todo.title} desc = {todo.desc}/>
+          return <Todo key = {todo.title} title = {todo.title} desc = {todo.desc}/>
+          // return <Todo todo = {todo}/>
       })}
 
       {/* We use map() because it returns a new array, and React can render an array of components. */}
