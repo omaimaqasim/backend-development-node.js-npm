@@ -118,6 +118,8 @@ export default App
 // 👉 Rendering means React runs your component again and updates the UI based on its output.
 // A component is a reusable piece of UI in React.
 
+// if you change the value of useref var it will not rerender whole components
+
 
 // whenever state is change react rerender entire component
 

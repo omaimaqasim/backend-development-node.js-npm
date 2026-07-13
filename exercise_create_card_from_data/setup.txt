@@ -1,0 +1,4 @@
+npm create vite@latest
+install with npm if not
+then npm i 
+then npm run dev

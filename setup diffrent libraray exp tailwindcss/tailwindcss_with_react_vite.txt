@@ -1,0 +1,13 @@
+npm create vite@latest my-project
+
+
+after setup react 
+
+npm install tailwindcss @tailwindcss/vite
+
+then 
+import tailwindcss from '@tailwindcss/vite'
+   tailwindcss(), in your vite.config file add these two
+
+ then
+ @import "tailwindcss"; in your css file that import tailwindcss  
