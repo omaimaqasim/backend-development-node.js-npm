@@ -15,16 +15,19 @@ function App() {
          .then(response => response.json())
          .then(json =>    setPosts(json))
 
-     setPosts(json);
+ 
    
   }, []);
   
 
   return (
     <>
+      <div className="posts flex flex-col gap-3 items-center">
      {posts.map(post=>{
-       return <Card key={post.id} userID = {post.userId} title = {post.title} des ={post.body} />
+       return <Card key={post.id} ID = {post.id} title = {post.title} des ={post.body} />
      })}
+
+      </div>
     </>
   )
 }
