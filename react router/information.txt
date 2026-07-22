@@ -1,0 +1,6 @@
+we use react router so we can goes to another page without reload
+//when you use anchor react reload the whole page thats whywe use react router so that 
+we can create multiple page application without reloading whole page again and again
+
+//step 1 
+npm i  react-router-dom
