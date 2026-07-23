@@ -6,23 +6,34 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import About from './Components/About'
 import Home from './Components/Home'
-import {createBrowserRouter} from "react-router-dom"
+import Contact from './Components/Contact'
+import User from './Components/User'
+import {createBrowserRouter, RouterProvider} from "react-router-dom"
 
 function App() {
  const router = createBrowserRouter([
   {
     path:"/",
-    element:<Home/>
+    element: <><Navbar/> <Home/></> 
   },
   {
      path:"/about",
-    element:<About/>
+    element:<><Navbar/> <About/></> 
+  },
+   {
+     path:"/contact",
+    element:<><Navbar/> <Contact/></> 
+  },
+   {
+     path:"/user/:username",
+    element:<><Navbar/> <User/></> 
   }
 
  ])
   return (
     <>
-    <Navbar/>
+
+    <RouterProvider router={router}/>
 
     </>
   )
