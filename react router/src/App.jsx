@@ -34,6 +34,7 @@ function App() {
     <>
 
     <RouterProvider router={router}/>
+    {/* this will check url then goes to router array then matches path and ive its matching element  */}
 
     </>
   )

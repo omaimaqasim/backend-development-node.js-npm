@@ -1,0 +1,2 @@
+if we want one usestate that is in app.jsx file in our nested component we have to pass that as props from its parent to him so if thete are many nested component for passing 
+usestate as prop is messy so we use usecontext hook so we can easily pass app.jsx state to nested component directly

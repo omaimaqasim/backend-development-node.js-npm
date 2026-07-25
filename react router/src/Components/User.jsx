@@ -4,7 +4,7 @@ const User = () => {
     const params = useParams()  
   return (
     <div>
-      {/* dynamic routering */}
+      {/* dynamic routing */}
       hey i am user : {params.username}
     </div>
   )
