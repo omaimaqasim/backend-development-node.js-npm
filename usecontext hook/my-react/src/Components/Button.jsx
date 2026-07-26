@@ -1,10 +1,14 @@
-import React from 'react'
+import React , {useContext} from 'react'
 import Text from './Text'
+import { CounterContext } from '../context/Context'
 const Button = () => {
+
+  const value = useContext(CounterContext)
   return (
+
     <div>
       <Text/>
-      <button>click me</button>
+      <button onClick={() => value.setCount((count) => count + 1)}>change count</button>
     </div>
   )
 }

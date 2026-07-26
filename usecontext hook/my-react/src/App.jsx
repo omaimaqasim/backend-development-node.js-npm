@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     {/* by this your all components and nested component will get value that you wanted */}
-      <CounterContext.Provider value={count}>
+      <CounterContext.Provider value={{count,setCount}}>
         <Navbar />
         <button
           type="button"
