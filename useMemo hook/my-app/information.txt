@@ -1,0 +1,5 @@
+We use useMemo so that expensive (complex) computations are only recomputed when their 
+dependencies change. This avoids unnecessary recalculations on every render.
+
+for example if you calculate something suing number state then whenever your number change 
+usememo that contain complex calculation recalculated
