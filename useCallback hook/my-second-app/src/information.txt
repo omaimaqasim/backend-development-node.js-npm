@@ -1,0 +1,8 @@
+memo use for preventing component from rerender except when component itself rerender because of change of its props
+
+usememo used for value and calculation
+
+like usememo memoize variable usecallback memoize function and freeze as you know  that if a function 
+is const and it is not changing on every re render but in react if count change react re render who app so const function also created again and when we pass it as props so react thing 
+functon change thats why it always reprender component that has const function for preventing this we use callback
+
