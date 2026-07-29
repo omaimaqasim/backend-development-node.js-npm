@@ -1,0 +1,3 @@
+we use library react-hook-form so that we dont hav to write code for form validation
+as it will waste our time and evergy
+
