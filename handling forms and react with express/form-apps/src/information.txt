@@ -1,3 +1,16 @@
 we use library react-hook-form so that we dont hav to write code for form validation
 as it will waste our time and evergy
 
+now for saving this in backend use express js
+
+install npm i express@4
+
+//for running backend
+node ./backend/server.js
+
+
+//installing cors so server one send request to server two and server two give permission to fetch data
+ npm install cors
+
+ //install body parser package
+ npm i body-parser
