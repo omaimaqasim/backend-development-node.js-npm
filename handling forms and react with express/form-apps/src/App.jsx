@@ -32,7 +32,6 @@ function App() {
   }
   return (
     <>
-      {isSubmitting && <div>submitting form wait...</div>}
 
       <div className="container">
         <form action="" onSubmit={handleSubmit(onSubmit)}>
@@ -53,6 +52,7 @@ function App() {
           {/* disable button while form is submitting s that user acidently will not  click button again and resumit it */}
           <input disabled={isSubmitting} type="submit" />
           {errors.myform && <div className="red">{errors.myform.message}</div>}
+            {isSubmitting && <div>submitting form wait...</div>}
 
           {/* if you want to create custom error if your name and password is invalid when server give you message then do this */}
 

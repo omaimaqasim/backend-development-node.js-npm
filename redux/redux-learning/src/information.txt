@@ -1,0 +1,4 @@
+so basically if we want many diffrent components to read states and use it in diffrent components we use redux 
+that is like main store that has all common usestate many components uses and read it if we dont use this 
+then w have to manuall passing it as a props it become strssful thats why we use redux
+
