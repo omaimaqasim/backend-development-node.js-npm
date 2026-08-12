@@ -1,0 +1,8 @@
+Next.js is a React framework that gives you features needed for real-world websites/apps,
+ such as built-in routing, SEO support, server-side features, image optimization, and more.
+
+
+ one biggest feature is app routing in that you just make folder of the route in app folder and just have to write thatfolder name
+ for getting that route this is app routing 
+
+

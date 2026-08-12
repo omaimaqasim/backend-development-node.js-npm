@@ -1,0 +1,1 @@
+npx create-next-app@latest // run command for installing nextjs with reacty
