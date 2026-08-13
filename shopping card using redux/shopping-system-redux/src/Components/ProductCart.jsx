@@ -1,5 +1,6 @@
 import React from "react";
-
+import { useSelector, useDispatch } from 'react-redux'
+import { addToCart} from '../Redux/Cart/cartSlice'
 const products = [
   {
     id: 1,
@@ -17,6 +18,8 @@ const products = [
     price: 50,
   },
 ];
+
+ const dispatch = useDispatch()
 
 const ProductCart = () => {
   return (
@@ -36,7 +39,7 @@ const ProductCart = () => {
             <p className="my-3">${product.price}</p>
 
             {/* TODO: Connect this button to Redux */}
-            <button className="bg-blue-500 text-white px-4 py-2 rounded">
+            <button onClick={()=> dispatch(addToCart(product))} className="bg-blue-500 text-white px-4 py-2 rounded">
               Add to Cart
             </button>
           </div>

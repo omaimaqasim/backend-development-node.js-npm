@@ -1,0 +1,14 @@
+so by default when you create components in nextjs it is server base components 
+diff bw server base component and client base 
+server base components is use for backend and client base components use for frontend 
+so nextjs is full stack framework 
+means you can do backend using server base component and frontend using client base component that runs
+on browser console
+
+
+"USE CLIENT"  WRITE THIS ON TOP OF COMPONENT FILE SO IT WILL KNOW THAT THIS IS CLIENT BASE COMPONENT 
+SO YOU CAN EASILY USE USESTATE AND USEEFFECT 
+
+
+if you want to use usestate or other hooks that only use in client component then make a saperate client
+component and embedded in the server component that there will be no error 
