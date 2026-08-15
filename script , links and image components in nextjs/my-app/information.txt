@@ -1,0 +1,1 @@
+for embedding jsx inside js file go to setting then write react then scroll to end add item js and jsreact
