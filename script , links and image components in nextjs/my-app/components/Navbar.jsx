@@ -1,3 +1,5 @@
+import Link from "next/link";
+import React from "react";
 const Navbar = () => {
   return (
     <nav className="flex justify-between items-center p-5">
@@ -6,21 +8,21 @@ const Navbar = () => {
       </h1>
 
       <ul className="flex gap-6">
-        <a href="/">
+        <Link href="/">
           <li>Home</li>
-        </a>
+        </Link>
 
-        <a href="/about">
+        <Link href="/about">
           <li>About</li>
-        </a>
+        </Link>
 
-        <a href="/services">
+        <Link href="/services">
           <li>Services</li>
-        </a>
+        </Link>
 
-        <a href="/contact">
+        <Link href="/contact">
           <li>Contact</li>
-        </a>
+        </Link>
       </ul>
 
       <button className="px-4 py-2 rounded bg-blue-500 text-white">
