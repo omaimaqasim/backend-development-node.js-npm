@@ -14,5 +14,20 @@ this is link component decumentaion
 };//this will show title and description of page
 
 SCRIPT COMPONENT:
+we use script tag so that we can write js in our project go through about page for this
 
+now understand script props like src from nextjs documentation
+
+stretegy prop has 4 types learn from nextjs documentaion
+and if you want your script load when app interactive then paste that code in layout.js FILE
+
+
+next/image is basically an upgraded <img> designed to make images load faster and behave better.
+<Image> → Next.js's smarter image component that helps with performance and image sizing/loading. 
+
+Next.js Image helps optimize images for faster loading and provides responsive image delivery, while CSS controls the image's layout on the page. 
+
+
+for image :
+first go to app page.js then go to next.config.json these two are img for showing image
 

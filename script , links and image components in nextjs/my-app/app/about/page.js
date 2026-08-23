@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Script from 'next/script'
 const page = () => {
   return (
     <div>
+      <Script>
+        {` alert("welcome to about page");`}
+       
+      </Script>
       this is about page
     </div>
   )
