@@ -28,6 +28,8 @@ next/image is basically an upgraded <img> designed to make images load faster an
 Next.js Image helps optimize images for faster loading and provides responsive image delivery, while CSS controls the image's layout on the page. 
 
 
+
+
 for image :
 first go to app page.js then go to next.config.json these two are img for showing image
 
