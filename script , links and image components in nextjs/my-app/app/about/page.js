@@ -7,6 +7,8 @@ const page = () => {
         {` alert("welcome to about page");`}
        
       </Script>
+
+   
       this is about page
     </div>
   )

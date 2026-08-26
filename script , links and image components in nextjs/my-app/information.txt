@@ -16,6 +16,9 @@ this is link component decumentaion
 SCRIPT COMPONENT:
 we use script tag so that we can write js in our project go through about page for this
 
+main reason we use script component our script tag just load as usual but 
+script component is smarter version of script tag it gives you control when to load script either before website interactive or after interactive
+
 now understand script props like src from nextjs documentation
 
 stretegy prop has 4 types learn from nextjs documentaion
