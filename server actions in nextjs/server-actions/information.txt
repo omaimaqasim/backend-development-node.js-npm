@@ -1,0 +1,11 @@
+server is a computer that acts as middleware bw client and database so basically when client send request to server for storing data  that request was send by api to server . api is like communication tool bw client and server and server is trusted middleware that receive request from client and then do as client want and give data or save data to data base 
+
+its like 
+client computer =>(api) server => database
+but for doing this simple task we have to do many thing like creating api 
+then sending data to server then server sending data to database 
+but there is shortcut to do this that is server action
+
+server actions is like a function we created and tell nextjs to run this on server directly we dont need to create api for this 
+"This function is a Server Action, so when it is called, Next.js will execute it on the server.
+
