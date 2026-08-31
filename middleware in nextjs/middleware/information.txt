@@ -1,0 +1,14 @@
+middleware is a function we use to modify request before it react to its destination
+
+first thing i learn how to redirect route like if someone goes to about page  
+we can redirect him using middleware wherever page we want i redirect him to / home page  => go to middleware.js a see it
+
+
+we use middleware if we want access of request object beforehand 
+
+what is rewrite and redirect in middleware?
+so redirect is if someone write /about in url open /home page instead of /about this is redirect
+
+and rewrite mean if someone write /about in url then goes to that page but show data of /home in this /home data is just copy in /about
+
+there is also one concept of if else we tell if that url matches to that page then show that specific data of url
