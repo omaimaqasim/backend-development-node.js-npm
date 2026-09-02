@@ -1,8 +1,12 @@
+React is primarily a library for building the UI (frontend), while Next.js is a framework built on top of React that gives you tools for building both the frontend and server-side parts of a web application.
+
 Next.js is a React framework that gives you features needed for real-world websites/apps,
  such as built-in routing, SEO support, server-side features, image optimization, and more.
 
 
  one biggest feature is app routing in that you just make folder of the route in app folder and just have to write thatfolder name
  for getting that route this is app routing 
+
+ In Next.js, the folders and files you create inside the app folder automatically become your website's URLs.=>IMPORTANT
 
 

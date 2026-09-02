@@ -1,0 +1,38 @@
+npx create-next-app@latest
+
+then :
+npm install next-auth
+then:
+npm run dev
+
+then:
+create folder like : api/auth/[...nextauth]/route.js
+
+then : 
+copy past code in that route.js 
+then:
+in layout.js add session provider
+
+then:
+copu paste code in page.js 
+
+then: 
+create .env.local file for storing all secrets in it so i can use wherever i want
+
+Authentication means checking who the user is, and Auth.js is a tool that makes adding that login/session system to your Next.js application much easier.
+
+
+API
+→ a way for frontend and backend to communicate
+
+Server Action
+→ lets your UI directly call server-side code
+
+Middleware
+→ checks/intercepts a request before it reaches the page
+
+Authentication
+→ checks WHO the user is
+
+Auth.js
+→ a tool that helps you implement authentication
