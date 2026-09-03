@@ -34,5 +34,5 @@ Next.js Image helps optimize images for faster loading and provides responsive i
 
 
 for image :
-first go to app page.js then go to next.config.json these two are img for showing image
+first go to app page.js then go to next.config.json these two are imp for showing image
 

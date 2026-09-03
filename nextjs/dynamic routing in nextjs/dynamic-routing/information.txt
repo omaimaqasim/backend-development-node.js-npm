@@ -1,0 +1,3 @@
+dynamic routing is used when user put diffrent route in url and we want to give them page related to the params
+
+in dynamic routing we create a var in folder that is filled when user write params and give data related to that params
