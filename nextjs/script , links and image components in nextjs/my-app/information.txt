@@ -30,9 +30,18 @@ next/image is basically an upgraded <img> designed to make images load faster an
 
 Next.js Image helps optimize images for faster loading and provides responsive image delivery, while CSS controls the image's layout on the page. 
 
-
-
+Attribute: Information you write on an HTML element.
+Prop: Information you pass to a React component.
 
 for image :
 first go to app page.js then go to next.config.json these two are imp for showing image
 
+When we clone a project from GitHub, the node_modules folder is usually missing because it is excluded from the repository.
+- package.json lists the required dependencies.
+- package-lock.json records the exact dependency versions.
+- npm install downloads and installs the dependencies into node_modules.
+- npm run dev starts the development server.
+Example: If Next.js isn't installed locally, npm run dev may fail. Running npm install first usually fixes the issue.
+
+
+- Hostname: The name or address of a computer or server on a network. For example, localhost means your own computer.

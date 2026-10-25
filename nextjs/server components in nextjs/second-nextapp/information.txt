@@ -12,3 +12,6 @@ SO YOU CAN EASILY USE USESTATE AND USEEFFECT
 
 if you want to use usestate or other hooks that only use in client component then make a saperate client
 component and embedded in the server component that there will be no error 
+
+
+With Next.js, you can build both your frontend and backend inside the same exact project at the same time. You do not need to create a completely separate project or repository for your backend API.
